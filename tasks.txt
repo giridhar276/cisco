@@ -42,15 +42,43 @@ l : 2 times
 o : 1 time
 ##################################################################
 
+write a program to read password from keyboard and check if password is strong or not (min 8 chars, upper, lower, digit)
+
+conditions:
+password should be minm of 8 chars
+password should have atleast one uppecase character
+password should have atleast one lowercase character
+password should have atleast one digit 
+
+
+Enter any password:  Pass1234
+Valid
+
+##################################################################
+write a program to remove leading/trailing/multiple middle spaces without .split()
+
+input: "   Hello     world   "
+output:  Hello world
+
 ##################################################################
 
+write a program to generate username 
+
+from full name, take first 3 of first name + last 3 of last name + total letters
+
+Enter firstname :John 
+Enter last name :Michael
+
+username is : johael11
 
 ##################################################################
 
+write a program to reverse words in Sentence
 
+Task: Reverse each word, but keep their order
 
-##################################################################
-
+input: Python is fun
+output: nohtyP is nuf
 
 ##################################################################
 ##################################################################
