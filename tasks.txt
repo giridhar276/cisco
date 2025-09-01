@@ -81,6 +81,11 @@ input: Python is fun
 output: nohtyP is nuf
 
 ##################################################################
+
+write a program to count Words Without Using .split()
+
+input: Python is a general purpose language
+output:  6
 ##################################################################
 
 
