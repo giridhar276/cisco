@@ -311,11 +311,131 @@ THUMBNAIL HEIGHT:  32
 
 ##################################################################
 
+site_info = {
+    "SITE1":  {"city": "Hyderabad", "devices": ["R1", "SW1"], "links": ["MPLS", "Internet"]},
+    "SITE2":  {"city": "Bengaluru", "devices": ["R2", "SW2"], "links": ["Internet"]},
+    "SITE3":  {"city": "Chennai", "devices": ["R3", "SW3"], "links": ["MPLS"]},
+    "SITE4":  {"city": "Pune", "devices": ["R4", "SW4"], "links": ["MPLS", "5G"]},
+    "SITE5":  {"city": "Mumbai", "devices": ["R5", "SW5"], "links": ["Internet"]},
+    "SITE6":  {"city": "Delhi", "devices": ["R6", "SW6"], "links": ["MPLS"]},
+    "SITE7":  {"city": "Kolkata", "devices": ["R7", "SW7"], "links": ["Internet", "5G"]},
+    "SITE8":  {"city": "Jaipur", "devices": ["R8", "SW8"], "links": ["Internet"]},
+    "SITE9":  {"city": "Ahmedabad", "devices": ["R9", "SW9"], "links": ["MPLS"]},
+    "SITE10": {"city": "Chandigarh", "devices": ["R10", "SW10"], "links": ["Internet"]},
+}
+
+
+write a program to display all the city names 
+
+Hyderabad
+Bengaluru
+Chennai
+Pune
+..
+..
+..
+
+##################################################################
+exercise_bank = [
+    {
+        "dictionary": interfaces_by_device,
+        "question": "Which interfaces are on R7?",
+        "task": "Append 'Te0/0' to R3's list if not present."
+    },
+    {
+        "dictionary": device_inventory,
+        "question": "What is the role of R4?",
+        "task": "List device IDs where os == 'NX-OS'."
+    },
+    
+]
+
+
+write a program to display the below output
+
+Which interfaces are on R7?
+What is the role of R4?
+
+##################################################################
+
+device_inventory = {
+    "R1":  {"model": "ISR4451", "os": "IOS-XE", "role": "Edge"},
+    "R2":  {"model": "ISR4331", "os": "IOS-XE", "role": "Edge"},
+    "R3":  {"model": "ISR4321", "os": "IOS-XE", "role": "WAN"},
+    "R4":  {"model": "ASR1001", "os": "IOS-XE", "role": "Core"},
+    "R5":  {"model": "ASR1002", "os": "IOS-XE", "role": "Core"},
+    "R6":  {"model": "N9K-C93180", "os": "NX-OS", "role": "DC"},
+    "R7":  {"model": "N9K-C9332",  "os": "NX-OS", "role": "DC"},
+    "R8":  {"model": "C9500-24Y4C", "os": "IOS-XE", "role": "Dist"},
+    "R9":  {"model": "C9300-48P",  "os": "IOS-XE", "role": "Access"},
+    "R10": {"model": "C9200-24P",  "os": "IOS-XE", "role": "Access"},
+}
+
+
+write a program to display the models and its roles  as below
+
+ISR4451 Edge
+ISR4331 Edge
+ISR4321 WAN
+..
+..
+..
+
+
+
 
 ##################################################################
 
 
+vlans_by_switch = {
+    "SW1":  [{"id": 10, "name": "Users"}, {"id": 20, "name": "Voice"}],
+    "SW2":  [{"id": 30, "name": "Servers"}, {"id": 40, "name": "Mgmt"}],
+    "SW3":  [{"id": 50, "name": "IoT"}, {"id": 60, "name": "CCTV"}],
+    "SW4":  [{"id": 70, "name": "Guest"}, {"id": 80, "name": "QA"}],
+    "SW5":  [{"id": 90, "name": "Dev"}, {"id": 100, "name": "Build"}],
+    "SW6":  [{"id": 110, "name": "Staging"}, {"id": 120, "name": "Backup"}],
+    "SW7":  [{"id": 130, "name": "SRV-A"}, {"id": 140, "name": "SRV-B"}],
+    "SW8":  [{"id": 150, "name": "LAB"}, {"id": 160, "name": "Sensors"}],
+    "SW9":  [{"id": 170, "name": "Camera"}, {"id": 180, "name": "Printers"}],
+    "SW10": [{"id": 190, "name": "WiFi"}, {"id": 200, "name": "Infra"}],
+}
+
+write a program to display all the ids and names line by line
+
+id : 10  name : Users
+id : 20  name : Voice
+id : 30  name : Servers
+id : 40  name : Mgmt
+
 ##################################################################
+
+
+mgmt_ip_by_device = {
+    "R1":  ("10.0.1.1", "255.255.255.0"),
+    "R2":  ("10.0.2.1", "255.255.255.0"),
+    "R3":  ("10.0.3.1", "255.255.255.0"),
+    "R4":  ("10.0.4.1", "255.255.255.0"),
+    "R5":  ("10.0.5.1", "255.255.255.0"),
+    "R6":  ("10.0.6.1", "255.255.255.0"),
+    "R7":  ("10.0.7.1", "255.255.255.0"),
+    "R8":  ("10.0.8.1", "255.255.255.0"),
+    "R9":  ("10.0.9.1", "255.255.255.0"),
+    "R10": ("10.0.10.1", "255.255.255.0"),
+}
+
+write a program to dispaly  the first IP in each tuple
+
+10.0.1.1
+10.0.2.1
+10.0.3.1
+10.0.4.1
+10.0.5.1
+..
+..
+..
+##################################################################
+
+
 
 
 ##################################################################
