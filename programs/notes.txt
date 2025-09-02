@@ -179,3 +179,77 @@ tuple()
 str()
 int()
 float()
+
+
+How to display all the list of builtin functions and exceptions ?
+
+print(dir(__builtins__))
+
+
+file handling
+--------------
+
+txt
+csv
+json
+html
+css
+png 
+jpg 
+xml
+xlsx
+jpeg
+mp3
+mp4
+pdf
+log 
+conf
+mkv
+mvi 
+wav
+dat
+zip
+rar
+7z
+tar 
+.tar.gz
+mov
+docx
+pptx
+
+
+flat files :   txt   log   csv   dat   json xml 
+
+third party files : pdf pptx  xlsx mp3 mp4 zip rar jpg
+
+
+working with flat files 
+-------------------------
+read mode ( r )
+write mode ( w )
+append mode ( a)
+
+
+opening the file 
+----------------
+
+syntax:    fobj = open(filename,mode)
+
+read opeartion :  fobj = open("clients.txt","r")
+write opeartion :  fobj = open("clients.txt","w")
+append opeartion :  fobj = open("clients.txt","a")
+
+
+closing the file
+---------------
+fobj.close()
+
+
+
+
+
+
+
+
+
+working with third party files

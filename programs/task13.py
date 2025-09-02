@@ -8,3 +8,16 @@ output:
 
 
 '''
+
+sentences = ["hello world", "hello python", "data world"]
+uniquelist = list()
+for item in sentences:
+    output = item.split(" ")
+    uniquelist.extend(output)
+print(set(uniquelist))
+
+
+sentences = ["hello world", "hello python", "data world"]
+string = " ".join(sentences)
+mylist = string.split(" ")
+print(set(mylist))
