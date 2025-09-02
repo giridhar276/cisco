@@ -160,8 +160,154 @@ alist = [56,56,34,62,6,10,10,10,54,72,74,27,57,67,10,10,10,10]
 
 output:
 [56,56,34,62,6,54,72,74,27,57,67]
+
+##################################################################
+################ dictionary #############################
 ##################################################################
 
+################################# dictionary tasks #######################
+
+
+
+colors = [
+{
+"colors": "red",
+"values": "#f00"
+},
+{
+"colors": "green",
+"values": "#0f0"
+},
+{
+"colors": "blue",
+"values": "#00f"
+},
+{
+"colors": "cyan",
+"values": "#0ff"
+},
+{
+"colors": "magenta",
+"values": "#f0f"
+},
+{
+"colors": "yellow",
+"values": "#ff0"
+},
+{
+"colors": "black",
+"values": "#000"
+}
+]
+
+write a program to display all the colors and its values.
+
+sample output :
+
+red #f00
+green #0f0
+yellow  #ff0
+magenta #f0f
+..
+..
+..
+
+##################################################################
+Write a program to display all employee names and their departments.
+
+employees = {
+    "E001": {"name": "Alice", "department": "Finance"},
+    "E002": {"name": "Bob", "department": "IT"},
+    "E003": {"name": "Charlie", "department": "HR"}
+}
+
+
+sample output:
+
+Alice  Finance
+Bob    IT
+
+##################################################################
+
+Write a program to print all product names and prices.
+
+products = [
+    {"id": 101, "name": "Laptop", "price": 75000},
+    {"id": 102, "name": "Mobile", "price": 25000},
+    {"id": 103, "name": "Tablet", "price": 15000}
+]
+
+##################################################################
+Write a program to show student names with grades.
+
+students = [
+    {"id": 1, "name": "John", "marks": {"math": 80, "science": 75}},
+    {"id": 2, "name": "Jane", "marks": {"math": 90, "science": 85}}
+]
+
+
+##################################################################
+Write a program to print team names and player names.
+
+teams = {
+    "TeamA": [
+        {"name": "Alice", "role": "Batsman"},
+        {"name": "Bob", "role": "Bowler"}
+    ],
+    "TeamB": [
+        {"name": "Charlie", "role": "Allrounder"},
+        {"name": "Dave", "role": "Wicketkeeper"}
+    ]
+}
+
+
+sample output:
+
+TeamA
+-----
+Alice
+Bob
+
+TeamB
+-----
+Charlie
+Dave
+
+
+##################################################################
+
+write a program to read the below dictionary and display the expected output
+
+info = {
+"id": "0001",
+"type": "donut",
+"name": "Cake",
+"image":
+{
+"url": "images/0001.jpg",
+"width": 200,
+"height": 200
+},
+"thumbnail":
+{
+"url": "images/thumbnails/0001.jpg",
+"width": 32,
+"height": 32
+}
+}
+
+
+sample output:
+
+ID              : 0001
+TYPE            : donut
+NAME            : Cake
+IMAGE URL       :"images/0001.jpg
+IMAGE WIDTH     : 200
+IMAGE HEIGHT    : 200
+THUMBNAIL URL   : "images/thumbnails/0001.jpg"
+THUMBNAIL WIDTH : 32
+THUMBNAIL HEIGHT:  32
 
 ##################################################################
 
