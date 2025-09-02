@@ -89,4 +89,83 @@ output:  6
 ##################################################################
 
 
+#################################################################
+############################ list assignments #################
+##################################################################
+
+wrrite a program to reverse a list without list.reverse() and [::-1]
+
+
+##################################################################
+write a program to square each number in a list
+
+nums = [1,2,3,4]
+
+output:
+[1,2,9,16]
+
+##################################################################
+
+write a program to join a list of words into a single string
+
+words = ["I","love","python","programming"]
+
+output:
+I love python programming
+##################################################################
+
+write a program to filter words longer than 4 letters
+
+words = ["python","unix","java","oracle"]
+
+output:
+["python","oracle"]
+##################################################################
+
+Write a program to join corresponding strings from two lists.
+
+first = ["Good", "Data", "Machine"]
+second = ["Morning", "Science", "Learning"]
+
+Output:
+Good Morning
+Data Science
+Machine Learning
+
+##################################################################
+
+
+Write a program to get all unique words from a list of sentences.
+
+sentences = ["hello world", "hello python", "data world"]
+
+output:
+["hello","world","python","data","world"]
+
+##################################################################
+Write a program to capitalize only the first letter of each word in a list 
+
+##################################################################
+data = ["Alice", "", None, "Bob", "Carol", "", None]
+
+Write a program to replace all None or empty strings in a list with 'NA'.
+
+output:
+["Alice", 'NA', 'NA', "Bob", "Carol", 'NA', 'NA']
+
+##################################################################
+
+
+##################################################################
+
+
+##################################################################
+
+
+##################################################################
+
+
+##################################################################
+
+
 ##################################################################
