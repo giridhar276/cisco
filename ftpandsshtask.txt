@@ -1,0 +1,75 @@
+
+
+########################ftp server details ###########################
+Host: ftp.dlptest.com
+Port: 21
+User: dlpuser
+Password: rNrKYTX9g7z3RgJRmxWuGHbeu
+######################################################################
+
+step1:
+open command prompt
+
+step2:
+cd Desktop   ( after that cross check that you are in Desktop path)
+
+step3:
+cd programs  ( you might have programs folder on desktop )
+
+step4:
+ftp ftp.dlptest.com
+
+step5:
+provide username
+
+step6:
+provide password
+
+after successful login .. you should see the below message
+230 Login successful.
+
+step7:
+put stringslicing.py   ( you are uploading file to ftp server)
+
+step8:
+get put stringslicing.py   ( you are downloading from ftp server)
+
+
+
+
+
+########################## ssh operation ############################
+
+Host: test.rebex.net
+Port: 22
+User: demo
+Password: password
+######################################################################
+
+step1:
+open command prompt
+
+step2:
+cd Desktop   ( after that cross check that you are in Desktop path)
+
+step3:
+cd programs  ( you might have programs folder on desktop )
+
+step4:
+ssh demo@test.rebex.net
+
+step5: ( password:  password)
+Enter password
+
+ 
+step6:  you should see linux prompt 
+
+
+step7: disconnecting
+exit
+
+
+
+############### scp operation #####################
+
+scp "txt1.py" demo@test.rebex.net:/home/
