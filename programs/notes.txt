@@ -219,8 +219,13 @@ pptx
 
 
 flat files :   txt   log   csv   dat   json xml 
+---------
+using open()
+
 
 third party files : pdf pptx  xlsx mp3 mp4 zip rar jpg
+--------------
+different libraries for each file format
 
 
 working with flat files 
@@ -236,8 +241,17 @@ opening the file
 syntax:    fobj = open(filename,mode)
 
 read opeartion :  fobj = open("clients.txt","r")
+                   # case1 : if the file is found.. will be able to read the file
+                   # case2 : if is file is not found .. error will be displayed
+
 write opeartion :  fobj = open("clients.txt","w")
+                  #case1: if the file is not found... file gets created first
+                  #case2 : if the file is found ... it overwrites the existing content
+
+
 append opeartion :  fobj = open("clients.txt","a")
+                  #case1: if the file is not found... file gets created first
+                  #case2 : if the file is found ... it appends the new content to existing
 
 
 closing the file
@@ -251,5 +265,164 @@ fobj.close()
 
 
 
+exception handling
+-----------------
+syntax error
+semantic error or runtimeerror or logical errors
 
-working with third party files
+handling the errors that occurs during runtime is called exception handling
+
+try    :  contains the code
+except : if something went wrong ,control comes to except block
+else   : if no error found in try block ... control comes to else
+finally: will be executed all the times
+
+
+
+mandate keywords:
+--------------
+try and except
+
+optional
+-------
+else and finally
+
+file write operation
+----------------
+fobj.write(string)
+fobj.writelines(list)
+
+file read operation
+--------------------
+
+1. reading the file line by line 
+2. using fobj.readlines()
+3. fobj.read()
+4. using csv library
+5. using pandas library
+
+
+
+definition | function | user defined function | block | subroutine | submodule
+------------------------------------------------------------------------
+code reusability
+- define block once and call it for multiple times.
+
+######### C style ######
+int add(int a, int b)
+{ 
+    int c = a+b;
+    return c
+}
+total = add(10,20);
+
+######## python style
+def add(a,b):
+    c = a + b 
+    return c
+total = add(10,20)
+
+
+different ways of passing arguments
+--------------------------------
+
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+
+### c ####
+#include<stdio.h>
+
+### python ###
+import libraryname
+
+
+there are 2 types of libraries
+
+1. builtin libraries
+--------------------
+When python is installed, it is installed with 3000+ libraries builtin libraries 
+which are generally used by everyone.
+Eg: mathematicaloperations , OS opeartions , date operations ,
+    ftp opeartions , copy , moving files, directory handling 
+    sqlite3(builtin database with python)
+
+
+2. third party libraries
+------------------------
+Depending on the requirement  developer has to install the third party library from 
+www.pypi.org using pip tool.
+
+Database operations, network operations, ssh operations , data analytics
+using pandas, numpy , visualizatinos , gui tools , web scrapping , web development
+
+
+
+#############################
+task =    core programming.   + good understanding of libraries  + domain 
+        ( procedural or oops)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################### frequently used builtin libraries #############################
+os         : os level activities
+math       : mathematical operations
+sys        :  sys and python config data
+shutil     : copy,move, rmtree  etc
+urllib     : read the web, downloading the files
+logging    : logging all the events
+smtplib    : sending the mails
+ftplib     : performing ftp operations
+sysconfig  :  sys and python config data
+zipfile    : create/extract the zip files
+rarfile    : create/extract the rar files
+cryptopgraphy : encrypting and decrypting the data or files
+tarfile    : create/extract the tar files
+filecmp    : comparing files or directories
+sqlite3    : python default database
+csv        : reading/writing csv files
+xml        : reading/writing xml files
+calendar   : display month,year calendar info
+datetime   : working with date n time
+time       : working with date n time
+fractions  : working with decimal values
+glob       : display all the files
+heapq      : more of array operations ( getting largest among list )
+subprocess : executing system commands in python (  subprocess.getoutput("ls -ltr")
+pdb        : python debugger
+platform   : platform information
+random     : random operations ( shuffling , random digit ... )
+re         : grep + awk + sed
+socket     : networking programming
+stat       : stats of the file
+statistics : basic statistics
+pathlib	   : Object-oriented file path operations
+time	     : Delays, timestamps, performance checks
+logging	   : Logging for scripts/apps (replace print for real apps)
+argparse	 : Command-line interface (CLI) argument parsing
+configparser : 	Read/write .ini config files
+json	     :Serialize/deserialize JSON (common in APIs)
+uuid	     : Generate unique IDs (useful in files, databases)
+statistics	:Basic stats: mean, median, stdev
+random	    :Random number generation, sampling
+collections	:Specialized containers (defaultdict, Counter, namedtuple)
+traceback	   :Print/format exception tracebacks
+warnings	   :Raise and handle warnings

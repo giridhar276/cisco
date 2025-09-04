@@ -3,6 +3,9 @@
 
 
 alist = [45,67,3,67,3,7,15,75]
+alist.append(49)
+
+
 
 print("After appending:",alist)
 alist.extend([94,45,6]) # list.extend(iterable)

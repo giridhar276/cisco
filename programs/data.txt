@@ -1,0 +1,12 @@
+cisco,bangalore,newtorking
+salesforce,hyderabad,crmtools
+oracle,hyderabad,database
+google,bangalore,aitools
+cisco,bangalore,newtorking
+salesforce,hyderabad,crmtools
+oracle,hyderabad,database
+google,bangalore,aitools
+cisco,bangalore,newtorking
+salesforce,hyderabad,crmtools
+oracle,hyderabad,database
+google,bangalore,aitools

@@ -5,6 +5,12 @@
 #obj = { key:value , key:value , key:value}
 book = {"chap1":10 ,"chap2":20 ,"chap3":30}
 
+
+print(len(book))
+
+
+
+
 for v in book.values():
     print(v)
 
