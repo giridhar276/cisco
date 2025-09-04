@@ -11,9 +11,9 @@ Password: rNrKYTX9g7z3RgJRmxWuGHbeu
 
 
 #####################ssh server details   #######################
-HOST : "bandit.labs.overthewire.org"
-USER : "bandit0"
-PW   : "bandit0"
+HOST : bandit.labs.overthewire.org
+USER : bandit0
+PW   : bandit0
 
 
 
